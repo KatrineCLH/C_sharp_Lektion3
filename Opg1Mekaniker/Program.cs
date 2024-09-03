@@ -25,6 +25,17 @@ namespace Opg1Mekaniker
                 Console.WriteLine(me.ToString());
             }
 
+            Console.WriteLine();
+
+            var medarbejderCollection = new MedarbejderListe<CprNr>();
+            var morten = new Mekaniker("Morten", "Brabrand", "2000", 195, new CprNr("211271","7777"), "1320");
+            var karina = new Mekaniker("Karina", "Aarhus", "2000", 190, new CprNr("141174", "8888"), "1410");
+            medarbejderCollection.AddElement(karina.CprNr, karina);
+            medarbejderCollection.AddElement(morten.CprNr, morten);
+
+            Console.WriteLine("Der er " + medarbejderCollection.Size() + " elementer i collection.");
+            Console.WriteLine(medarbejderCollection.GetElement(new CprNr("211271", "7777")));
+
             Console.ReadLine();
         }
     }

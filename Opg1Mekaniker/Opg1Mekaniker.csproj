@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CprNr.cs" />
     <Compile Include="Medarbejder.cs" />
+    <Compile Include="MedarbejderListe.cs" />
     <Compile Include="Mekaniker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

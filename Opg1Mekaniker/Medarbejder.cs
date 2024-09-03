@@ -25,6 +25,7 @@ namespace Opg1Mekaniker
         public String Navn { get { return navn; } set { navn = value; } }
         public String Adresse { get { return adresse; } set { adresse = value; } }
         public int TimerPrUge { get { return timerPrUge; } }
+        public CprNr CprNr { get { return cprNr; } set { cprNr = value; } }
 
         public abstract int beregnUgeLon();
 
