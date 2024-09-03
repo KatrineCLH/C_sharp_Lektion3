@@ -11,11 +11,15 @@ namespace Opg1Mekaniker
         private String navn;
         private String adresse;
         private const int timerPrUge = 37;
+        private CprNr cprNr;
+        private String medarbejdernummer;
 
-        public Medarbejder(String navn, String adresse) 
+        public Medarbejder(String navn, String adresse, CprNr cprNr, string medarbejdernummer)
         {
             this.navn = navn;
             this.adresse = adresse;
+            this.cprNr = cprNr;
+            this.medarbejdernummer = medarbejdernummer;
         }
 
         public String Navn { get { return navn; } set { navn = value; } }
@@ -23,5 +27,10 @@ namespace Opg1Mekaniker
         public int TimerPrUge { get { return timerPrUge; } }
 
         public abstract int beregnUgeLon();
+
+        public override string ToString()
+        {
+            return Navn + " bor på " + Adresse + " og tjener " + beregnUgeLon() + " kr. om ugen";
+        }
     }
 }

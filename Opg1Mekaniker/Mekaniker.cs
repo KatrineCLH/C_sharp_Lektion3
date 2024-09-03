@@ -11,7 +11,8 @@ namespace Opg1Mekaniker
         private String svendeprove;
         private int timelon;
 
-        public Mekaniker(String navn, String adresse, String svendeprove, int timelon) : base(navn, adresse) 
+        public Mekaniker(String navn, String adresse, 
+            String svendeprove, int timelon, CprNr cprNr, String medarbejdernummer) : base(navn, adresse, cprNr, medarbejdernummer) 
         {
             this.svendeprove = svendeprove;
             this.timelon = timelon;

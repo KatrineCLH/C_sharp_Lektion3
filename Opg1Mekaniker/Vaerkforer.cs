@@ -13,7 +13,7 @@ namespace Opg1Mekaniker
 
         public Vaerkforer(string navn, string adresse, 
             string svendeprove, int timelon, string udnaevnelse, 
-            int tillaeg) : base(navn, adresse, svendeprove, timelon)
+            int tillaeg, CprNr cprNr, String medarbejdernummer) : base(navn, adresse, svendeprove, timelon, cprNr, medarbejdernummer)
         {
             this.udnaevnelse = udnaevnelse;
             this.tillaeg = tillaeg;
