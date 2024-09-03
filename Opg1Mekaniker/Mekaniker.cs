@@ -18,6 +18,12 @@ namespace Opg1Mekaniker
             this.timelon = timelon;
         }
 
+        public Mekaniker(String navn, String adresse,
+            String svendeprove, CprNr cprNr, String medarbejdernummer) : base(navn, adresse, cprNr, medarbejdernummer)
+        {
+            this.svendeprove = svendeprove;
+        }
+
         public String Svendeprove {  get { return svendeprove; } set { svendeprove = value; } }
         public int Timelon { get { return timelon; } set { timelon = value; } }
 

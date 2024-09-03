@@ -14,7 +14,7 @@ namespace Opg1Mekaniker
 
             Mekaniker per = new Mekaniker("Per", "Gadenavn", "2000", 200, new CprNr("123456", "7890"), "1");
             Vaerkforer lis = new Vaerkforer("Lis", "Vej", "1990", 300, "2000", 50, new CprNr("098765", "4321"), "2");
-            Synsmand gitte = new Synsmand("Gitte", "Allé", "1980", 80, 450, new CprNr("567890", "1234"), "3");
+            Synsmand gitte = new Synsmand("Gitte", "Allé", "1980", 80, new CprNr("567890", "1234"), "3");
 
             m.Add(per);
             m.Add(lis);

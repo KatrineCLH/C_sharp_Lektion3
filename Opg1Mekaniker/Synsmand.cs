@@ -12,8 +12,8 @@ namespace Opg1Mekaniker
         private int ugeLon;
 
         public Synsmand(string navn, string adresse, 
-            string svendeprove, int antalSyn, 
-            int timelon, CprNr cprNr, String medarbejdernummer) : base(navn, adresse, svendeprove, timelon, cprNr, medarbejdernummer) 
+            string svendeprove, int antalSyn, CprNr cprNr, 
+            String medarbejdernummer) : base(navn, adresse, svendeprove, cprNr, medarbejdernummer) 
         {
             this.antalSyn = antalSyn;
             this.ugeLon = antalSyn * 290;
