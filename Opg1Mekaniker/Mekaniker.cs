@@ -19,5 +19,10 @@ namespace Opg1Mekaniker
 
         public String Svendeprove {  get { return svendeprove; } set { svendeprove = value; } }
         public int Timelon { get { return timelon; } set { timelon = value; } }
+
+        public override int beregnUgeLon()
+        {
+            return TimerPrUge * timelon;
+        }
     }
 }

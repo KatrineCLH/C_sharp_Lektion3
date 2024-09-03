@@ -10,6 +10,7 @@ namespace Opg1Mekaniker
     {
         private String navn;
         private String adresse;
+        private const int timerPrUge = 37;
 
         public Medarbejder(String navn, String adresse) 
         {
@@ -19,5 +20,8 @@ namespace Opg1Mekaniker
 
         public String Navn { get { return navn; } set { navn = value; } }
         public String Adresse { get { return adresse; } set { adresse = value; } }
+        public int TimerPrUge { get { return timerPrUge; } }
+
+        public abstract int beregnUgeLon();
     }
 }

@@ -21,5 +21,10 @@ namespace Opg1Mekaniker
 
         public int AntalSyn { get { return antalSyn; } set { antalSyn = value; } }
         public int UgeLon { get { return ugeLon; } }
+
+        public override int beregnUgeLon()
+        {
+            return ugeLon;
+        }
     }
 }

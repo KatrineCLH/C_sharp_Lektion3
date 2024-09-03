@@ -21,7 +21,7 @@ namespace Opg1Mekaniker
             m.Add(gitte);
 
             foreach (Mekaniker me in m) {
-                Console.WriteLine(me.Navn + " tjener: " + me.Timelon + " kr.");
+                Console.WriteLine(me.Navn + " tjener: " + me.beregnUgeLon() + " kr. om ugen");
             }
 
             Console.ReadLine();
