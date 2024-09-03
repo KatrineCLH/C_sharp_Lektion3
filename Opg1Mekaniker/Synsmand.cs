@@ -18,5 +18,8 @@ namespace Opg1Mekaniker
             this.antalSyn = antalSyn;
             this.ugeLon = antalSyn * 290;
         }
+
+        public int AntalSyn { get { return antalSyn; } set { antalSyn = value; } }
+        public int UgeLon { get { return ugeLon; } }
     }
 }
